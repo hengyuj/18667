@@ -1,0 +1,2784 @@
+Model {
+  Name			  "cruise"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Mon Jan 15 20:03:08 2001"
+  Creator		  "jingcao"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "jingcao"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Feb 11 14:46:39 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:227>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "1500"
+  SolverMode		  "Auto"
+  Solver		  "ode5"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "1.5"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "cruise"
+    Location		    [57, 59, 1060, 639]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Abs
+      Name		      "Abs1"
+      Position		      [270, 350, 300, 380]
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Chart"
+      Ports		      [2, 6]
+      Position		      [200, 117, 500, 278]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Stateflow"
+      MaskDescription	      "Stateflow diagram"
+      MaskDisplay	      "plot(sf('Private','sfblk','xIcon'),sf('Private'"
+",'sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'HorizontalAl',"
+"'Center','VerticalAl','Bottom');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      off
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Chart"
+	Location		[257, 457, 812, 717]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "cruise_speed"
+	  Position		  [20, 101, 40, 119]
+	  Port			  "1"
+	  LatchInput		  off
+	  PortDimensions	  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "current_speed"
+	  Position		  [20, 136, 40, 154]
+	  Port			  "2"
+	  LatchInput		  off
+	  PortDimensions	  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  Ports			  [1, 1]
+	  Position		  [270, 315, 320, 355]
+	  Outputs		  "1"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  " SFunction "
+	  Tag			  "Stateflow S-Function cruise 1"
+	  Ports			  [2, 7]
+	  Position		  [180, 104, 230, 266]
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[2 7]"
+	  SFunctionModules	  "''"
+	  Port {
+	    PortNumber		    2
+	    Name		    "acceleration"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "gear"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "clutch"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "brake"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "accelerator"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "error"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  Position		  [460, 326, 480, 344]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "acceleration"
+	  Position		  [460, 101, 480, 119]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "gear"
+	  Position		  [460, 136, 480, 154]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "clutch"
+	  Position		  [460, 171, 480, 189]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "brake"
+	  Position		  [460, 206, 480, 224]
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "accelerator"
+	  Position		  [460, 246, 480, 264]
+	  Port			  "5"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "error"
+	  Position		  [460, 281, 480, 299]
+	  Port			  "6"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  Points		  [0, 225]
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "cruise_speed"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "current_speed"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "acceleration"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "acceleration"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "gear"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "gear"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "clutch"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "clutch"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "brake"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "brake"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "accelerator"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  6
+	  DstBlock		  "accelerator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "error"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  7
+	  DstBlock		  "error"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [385, 425, 415, 455]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [510, 445, 540, 475]
+      Orientation	      "left"
+      Value		      "0.5"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      Position		      [270, 425, 300, 455]
+      Value		      "1.5"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator2"
+      Ports		      [1, 1]
+      Position		      [720, 155, 750, 185]
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator3"
+      Ports		      [1, 1]
+      Position		      [565, 380, 595, 410]
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product"
+      Ports		      [2, 1]
+      Position		      [505, 377, 535, 408]
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_acceleration"
+      Ports		      [1]
+      Position		      [750, 89, 780, 121]
+      Floating		      off
+      Location		      [637, 703, 1225, 969]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "0"
+      YMax		      "80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_accelerator"
+      Ports		      [1]
+      Position		      [620, 219, 650, 251]
+      Floating		      off
+      Location		      [89, 570, 677, 837]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-6"
+      YMax		      "3"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData4"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_brake"
+      Ports		      [1]
+      Position		      [535, 194, 565, 226]
+      Floating		      off
+      Location		      [604, 85, 1192, 351]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-6"
+      YMax		      "3"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData6"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_clutch"
+      Ports		      [1]
+      Position		      [615, 169, 645, 201]
+      Floating		      off
+      Location		      [637, 361, 1225, 627]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-6"
+      YMax		      "3"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_deviation"
+      Ports		      [1]
+      Position		      [640, 379, 670, 411]
+      Floating		      off
+      Location		      [6, 584, 664, 848]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData7"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_error"
+      Ports		      [1]
+      Position		      [535, 244, 565, 276]
+      Floating		      off
+      Location		      [6, 50, 806, 570]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_gear"
+      Ports		      [1]
+      Position		      [535, 144, 565, 176]
+      Floating		      off
+      Location		      [508, 361, 1096, 627]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-6"
+      YMax		      "3"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData5"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_speed"
+      Ports		      [1]
+      Position		      [870, 279, 900, 311]
+      Floating		      off
+      Location		      [522, 583, 1110, 849]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "0"
+      YMax		      "80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Signum
+      Name		      "Sign1"
+      Position		      [380, 350, 410, 380]
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [210, 346, 230, 384]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|-+"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [330, 337, 355, 393]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1]
+      Position		      [460, 357, 485, 413]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum4"
+      Ports		      [3, 1]
+      Position		      [655, 65, 675, 145]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|+++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "cruise_setup"
+      Position		      [15, 145, 75, 175]
+      VariableName	      "[0 30; 300 20; 600 50; 1200 40]"
+      SampleTime	      "0"
+      Interpolate	      off
+      OutputAfterFinalValue   "HoldingFinalValue"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "fixed resistance"
+      Position		      [525, 40, 555, 70]
+      Value		      "-0.02"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "road_condition1"
+      Position		      [510, 85, 570, 115]
+      VariableName	      "[0 0; 150 0.05; 400 0; 800 0.06; 1000 -0.05]"
+      SampleTime	      "0"
+      Interpolate	      off
+      OutputAfterFinalValue   "HoldingFinalValue"
+    }
+    Line {
+      SrcBlock		      "Chart"
+      SrcPort		      1
+      DstBlock		      "Sum4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Integrator2"
+      SrcPort		      1
+      Points		      [20, 0; 0, 125]
+      Branch {
+	Points			[-595, 0]
+	Branch {
+	  Points		  [0, 70]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -55]
+	  DstBlock		  "Chart"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	DstBlock		"Scope_speed"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Chart"
+      SrcPort		      5
+      DstBlock		      "Scope_accelerator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Chart"
+      SrcPort		      4
+      DstBlock		      "Scope_brake"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Abs1"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Sign1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sign1"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Integrator3"
+      SrcPort		      1
+      DstBlock		      "Scope_deviation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      DstBlock		      "Product"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [-15, 0]
+      DstBlock		      "Product"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Product"
+      SrcPort		      1
+      DstBlock		      "Integrator3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      Points		      [10, 0]
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "fixed resistance"
+      SrcPort		      1
+      Points		      [80, 0]
+      DstBlock		      "Sum4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "cruise_setup"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"Chart"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 215]
+	DstBlock		"Sum1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Chart"
+      SrcPort		      6
+      DstBlock		      "Scope_error"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Chart"
+      SrcPort		      3
+      DstBlock		      "Scope_clutch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Chart"
+      SrcPort		      2
+      DstBlock		      "Scope_gear"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "road_condition1"
+      SrcPort		      1
+      Points		      [40, 0; 0, 15]
+      DstBlock		      "Sum4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum4"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"Scope_acceleration"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65]
+	DstBlock		"Integrator2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Abs1"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [768, 402]
+    }
+    Annotation {
+      Position		      [898, 60]
+      Text		      "Choose Start from\nthe Simulation menu\nto run "
+"the simulation."
+      FontName		      "Century Schoolbook"
+      FontSize		      12
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+  }
+}
+
+# Finite State Machines
+# -- File save dated 11-Feb-2002 14:46:40
+#
+#    Stateflow Version 4.1 (R12.1) dated May 21 2001, 01:30:51
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"cruise"
+		created              		"15-Jan-2001 20:42:39"
+		isLibrary            		0
+		firstTarget          		105
+		sfVersion            		41012101
+	}
+
+	chart {
+		id                       		2
+		name                     		"Chart"
+		windowPosition           		[58.447 94.871 882.635 587.012]
+		viewLimits               		[0 483.995 0 317.055]
+		zoomFactor               		0.581
+		screen                   		[1 1 1152 900 1.180555555555556]
+		treeNode                 		[0 14 0 0]
+		viewObj                  		2
+		machine                  		1
+		subviewS {
+		}
+		decomposition            		SET_CHART
+		firstEvent               		82
+		firstData                		88
+		chartFileNumber          		1
+	}
+
+	state {
+		id             		3
+		labelString    		"Clutch"
+		position       		[0 9.865 265.323 125.008]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 5 14 28]
+		firstTransition		37
+		superState     		GROUPED
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		4
+		labelString    		"released\n"
+						"en:\n"
+						"clutch=0;"
+		position       		[6.293 40.195 75 50]
+		fontSize       		12
+		chart          		2
+		treeNode       		[3 0 5 0]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		5
+		labelString    		"pressed\n"
+						"en:\n"
+						"clutch=1;"
+		position       		[165.563 39.335 75 50]
+		fontSize       		12
+		chart          		2
+		treeNode       		[3 0 0 4]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		6
+		labelString    		"Accelerator"
+		position       		[0.475 308.7 763.172 127.377]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 8 9 25]
+		firstTransition		39
+		superState     		GROUPED
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+		firstData      		75
+	}
+
+	state {
+		id             		7
+		labelString    		"idle\n"
+						"en:"
+		position       		[19.351 342.839 75 50]
+		fontSize       		12
+		chart          		2
+		treeNode       		[6 0 24 0]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		8
+		labelString    		"delay\n"
+						"en:\n"
+						"tmp=t+ACCE_DELAY*ml.abs(toAcceLevel-accelerator);"
+		position       		[205.17 325.977 331.003 51.064]
+		fontSize       		12
+		chart          		2
+		treeNode       		[6 0 0 24]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		9
+		labelString    		"Safety_checking2"
+		position       		[1051.676 195.84 459.795 163.671]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 10 20 6]
+		firstTransition		40
+		firstJunction  		34
+		superState     		GROUPED
+		visible        		0
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		10
+		labelString    		"safe\n"
+						"en:"
+		position       		[1095.618 234.132 74.264 32.514]
+		fontSize       		12
+		chart          		2
+		treeNode       		[9 0 0 12]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		11
+		labelString    		"safe\n"
+						"en:"
+		position       		[1090.195 412.233 74.264 32.514]
+		fontSize       		12
+		chart          		2
+		treeNode       		[25 0 26 0]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		12
+		labelString    		"error\n"
+						"en:error[2]=1;"
+		position       		[1431.016 237.965 71.514 35.813]
+		fontSize       		12
+		chart          		2
+		treeNode       		[9 0 10 0]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		13
+		labelString    		"third\n"
+						"en:gear=3;"
+		position       		[253.427 198.36 67.709 31.677]
+		fontSize       		12
+		chart          		2
+		treeNode       		[17 0 18 0]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		14
+		labelString    		"Calculation"
+		position       		[348.617 1.52 651.138 169.35]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 16 0 3]
+		firstTransition		50
+		superState     		GROUPED
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+		firstData      		77
+	}
+
+	state {
+		id             		15
+		labelString    		"start\n"
+						"en:tmp=t;"
+		position       		[408.479 47.73 75 50]
+		fontSize       		12
+		chart          		2
+		treeNode       		[14 0 16 0]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		16
+		labelString    		"calculating\n"
+						"en:\n"
+						"tmp = t;"
+		position       		[896.028 46.054 98.461 41.74]
+		fontSize       		12
+		chart          		2
+		treeNode       		[14 0 0 15]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		17
+		labelString    		"Gear_state"
+		position       		[1.157 155.307 340.623 135.809]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 19 28 20]
+		firstTransition		53
+		superState     		GROUPED
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		18
+		labelString    		"first\n"
+						"en:gear=1;"
+		position       		[7.557 196.107 67.709 31.677]
+		fontSize       		12
+		chart          		2
+		treeNode       		[17 0 19 13]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		19
+		labelString    		"second\n"
+						"en:gear=2;"
+		position       		[118.872 195.791 67.709 31.677]
+		fontSize       		12
+		chart          		2
+		treeNode       		[17 0 0 18]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		20
+		labelString    		"Brake"
+		position       		[348.863 181.163 688.302 121.46]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 23 17 9]
+		firstTransition		64
+		superState     		GROUPED
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+		firstData      		80
+	}
+
+	state {
+		id             		21
+		labelString    		"delay\n"
+						"en:\n"
+						"tmp=t+BRAKE_DELAY*ml.abs(toBrakeLevel-brake);"
+		position       		[534.46 208.17 303.196 54.772]
+		fontSize       		12
+		chart          		2
+		treeNode       		[20 0 23 22]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		22
+		labelString    		"idle\n"
+						"en:"
+		position       		[367.739 215.302 75 50]
+		fontSize       		12
+		chart          		2
+		treeNode       		[20 0 21 0]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		23
+		labelString    		"adjust\n"
+						"en:\n"
+						"brake=toBrakeLevel;\n"
+						"tmp=t;"
+		position       		[899.083 204.142 123.531 58.979]
+		fontSize       		12
+		chart          		2
+		treeNode       		[20 0 0 21]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		24
+		labelString    		"adjust\n"
+						"en:\n"
+						"accelerator=toAcceLevel;\n"
+						"tmp=t;"
+		position       		[578.232 328.292 167.483 60.261]
+		fontSize       		12
+		chart          		2
+		treeNode       		[6 0 8 7]
+		isGrouped      		1
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		25
+		labelString    		"Safety_checking3"
+		position       		[1046.254 382.459 370.906 78.033]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 26 6 31]
+		firstTransition		49
+		superState     		GROUPED
+		visible        		0
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		26
+		labelString    		"error\n"
+						"en:error[3]=1;"
+		position       		[1321.504 410.386 82.688 36.317]
+		fontSize       		12
+		chart          		2
+		treeNode       		[25 0 0 11]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		27
+		labelString    		"1. To let the cruise controller control the degree of the "
+						"accelerator, you should first set up the variable\n"
+						"toAcceLevel (between 0 to 5) and then fire event adjust_ac"
+						"celerator. There will be certain delay between\n"
+						" you fire the event and the accelerator adapts to the degr"
+						"ee that you specified.\n"
+						"2. To let the cruise controller control the brake, you sho"
+						"uld first set up the variable toBrakeLevel (between\n"
+						"0 and 5) and then fire event adjust_brake. There will be c"
+						"ertain delay between you fire the event and the\n"
+						"brake adapts to the degree that you specified.\n"
+						"3. The way to control the clutch and select the gear is ob"
+						"vious from the stateflow.\n"
+						"4. You are only allowed to modify  the model of cruise_con"
+						"troller. All the varialbe  that you add should be\n"
+						"local to cruise_controller."
+		position       		[958.379 619.665 456.807 119.364]
+		chart          		2
+		treeNode       		[2 0 31 0]
+		superState     		GROUPED
+		isNoteBox      		1
+		noteBox        		[0 0 0 1]
+		visible        		0
+		subviewer      		2
+		type           		GROUP_STATE
+		decomposition  		SET_STATE
+	}
+
+	state {
+		id             		28
+		labelString    		"Safety_checking1"
+		position       		[1049.402 18.82 459.228 164.18]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 30 3 17]
+		firstTransition		71
+		firstJunction  		32
+		superState     		GROUPED
+		visible        		0
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		29
+		labelString    		"safe"
+		position       		[1120.649 58.022 105.583 39.429]
+		fontSize       		12
+		chart          		2
+		treeNode       		[28 0 30 0]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		30
+		labelString    		"error\n"
+						"en:error[1]=1;"
+		position       		[1351.613 55.092 105.583 39.429]
+		fontSize       		12
+		chart          		2
+		treeNode       		[28 0 0 29]
+		isGrouped      		1
+		visible        		0
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		31
+		labelString    		"Cruise_controller"
+		position       		[7.427 455.455 677.879 278.761]
+		fontSize       		12
+		chart          		2
+		treeNode       		[2 0 25 27]
+		visible        		0
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	junction {
+		id         		32
+		position   		[1287.8947 77.9259 7]
+		chart      		2
+		linkNode   		[28 0 33]
+		visible    		0
+		isGrouped  		1
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	junction {
+		id         		33
+		position   		[1301.5499 137.7987 7]
+		chart      		2
+		linkNode   		[28 32 0]
+		visible    		0
+		isGrouped  		1
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	junction {
+		id         		34
+		position   		[1276.339 235.8345 7]
+		chart      		2
+		linkNode   		[9 0 35]
+		visible    		0
+		isGrouped  		1
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	junction {
+		id         		35
+		position   		[1246.9572 277.7135 7]
+		chart      		2
+		linkNode   		[9 34 36]
+		visible    		0
+		isGrouped  		1
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	junction {
+		id         		36
+		position   		[1242.9572 330.3802 7]
+		chart      		2
+		linkNode   		[9 35 0]
+		visible    		0
+		isGrouped  		1
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	transition {
+		id             		37
+		labelString    		"press_clutch"
+		labelPosition  		[81.706 20.084 69.353 15.215]
+		fontSize       		12
+		src {
+			id          		4
+			intersection		[1 0 -1 0.6767 57.0455 40.1946 0 0]
+		}
+		dst {
+			id          		5
+			intersection		[1 0 -1 0.2502 184.328 39.3346 0 0]
+		}
+		midPoint       		[125.0864 26.4218]
+		chart          		2
+		linkNode       		[3 0 38]
+		isGrouped      		1
+		dataLimits     		[57.046 186.728 21.361 40.195]
+		subviewer      		2
+	}
+
+	transition {
+		id             		38
+		labelString    		"release_clutch"
+		labelPosition  		[82.568 113.536 78.698 15.215]
+		fontSize       		12
+		src {
+			id          		5
+			intersection		[3 0 1 0.7501 184.3055 89.3346 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[3 0 1 0.422 49.643 90.1946 0 0]
+		}
+		midPoint       		[112.587 127.657]
+		chart          		2
+		linkNode       		[3 37 41]
+		isGrouped      		1
+		dataLimits     		[47.243 184.306 89.335 127.636]
+		subviewer      		2
+	}
+
+	transition {
+		id             		39
+		labelString    		"adjust_accelerator"
+		labelPosition  		[92.544 336.301 100.34 15.215]
+		fontSize       		12
+		src {
+			id          		7
+			intersection		[2 1 0 0.1682 94.351 351.249 0 0]
+		}
+		dst {
+			id          		8
+			intersection		[4 -1 0 0.5051 205.1704 351.249 0 0]
+		}
+		midPoint       		[147.9091 351.249]
+		chart          		2
+		linkNode       		[6 0 63]
+		isGrouped      		1
+		dataLimits     		[94.351 205.17 348.849 353.649]
+		subviewer      		2
+		drawStyle      		SMART
+	}
+
+	transition {
+		id             		40
+		labelString    		"[gear==1&&clutch==0]"
+		labelPosition  		[1173.46 203.724 122.966 15.215]
+		fontSize       		12
+		src {
+			id          		10
+			intersection		[1 0 -1 0.7086 1148.2413 234.1319 0 0]
+		}
+		dst {
+			id          		34
+			intersection		[0 -0.7071 -0.7071 -1 1271.3893 230.8848 0 0]
+		}
+		midPoint       		[1192.7217 205.773]
+		chart          		2
+		linkNode       		[9 0 58]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1148.241 1271.389 204.492 234.132]
+		stampAngle     		-0.7854
+		subviewer      		2
+	}
+
+	transition {
+		id             		41
+		labelString    		"{clutch=0;}"
+		labelPosition  		[9.904 109.657 57.548 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0 9.6981 126.7674 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[3 0 1 0.6265 34.3055 90.1946 0 0]
+		}
+		midPoint       		[25.7425 112.9241]
+		chart          		2
+		linkNode       		[3 38 0]
+		isGrouped      		1
+		dataLimits     		[9.698 36.706 90.195 126.767]
+		subviewer      		2
+	}
+
+	transition {
+		id             		42
+		labelPosition  		[1139.463 325.815 6.886 15.215]
+		fontSize       		12
+		src {
+			id          		36
+			intersection		[0 -0.1521 0.9884 -1 1241.8928 337.2988 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[3 0 1 0.8204 1108.9573 266.6459 0 0]
+		}
+		midPoint       		[1168.361 341.2866]
+		chart          		2
+		linkNode       		[9 59 66]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1106.557 1241.893 266.646 351.954]
+		stampAngle     		2.1353
+		subviewer      		2
+	}
+
+	transition {
+		id             		43
+		labelString    		"/accelerator=0;"
+		labelPosition  		[32.645 403.881 80.666 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 -1 0 0 30.1847 419.5057 0 0]
+		}
+		dst {
+			id          		7
+			intersection		[3 0 1 0.8556 30.1813 392.8391 0 0]
+		}
+		midPoint       		[27.0023 412.3258]
+		chart          		2
+		linkNode       		[6 68 0]
+		isGrouped      		1
+		dataLimits     		[26.985 32.581 392.839 419.506]
+		subviewer      		2
+	}
+
+	transition {
+		id             		44
+		labelString    		"[gear==3&&clutch==0]"
+		labelPosition  		[1153.882 300.044 122.966 15.215]
+		fontSize       		12
+		src {
+			id          		10
+			intersection		[3 0 1 0.5421 1129.624 266.6459 0 0]
+		}
+		dst {
+			id          		36
+			intersection		[0 -0.9744 -0.2249 -1 1236.1365 328.8062 0 0]
+		}
+		midPoint       		[1166.5554 309.9008]
+		chart          		2
+		linkNode       		[9 66 45]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1129.624 1236.137 266.646 329.346]
+		stampAngle     		0.4904
+		subviewer      		2
+	}
+
+	transition {
+		id             		45
+		labelString    		"[current_speed<GEAR3MIN]"
+		labelPosition  		[1270.813 325.377 156.905 15.215]
+		fontSize       		12
+		src {
+			id          		36
+			intersection		[0 0.9744 -0.2249 -1 1249.7779 328.8062 0 0]
+		}
+		dst {
+			id          		12
+			intersection		[3 0 1 0.7942 1445.7336 273.7779 0 0]
+		}
+		midPoint       		[1378.9661 323.1182]
+		chart          		2
+		linkNode       		[9 44 0]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1249.778 1448.134 273.778 328.806]
+		stampAngle     		-0.0655
+		subviewer      		2
+	}
+
+	transition {
+		id             		46
+		labelString    		"[clutch==1]"
+		labelPosition  		[1170.561 145.459 60.991 15.215]
+		fontSize       		12
+		src {
+			id          		33
+			intersection		[0 0.0995 0.995 -1 1302.2464 144.7637 0 0]
+		}
+		dst {
+			id          		29
+			intersection		[3 0 1 0.3511 1189.1615 97.4508 0 0]
+		}
+		midPoint       		[1243.4721 154.3425]
+		chart          		2
+		linkNode       		[28 47 0]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1186.761 1302.246 97.451 159.129]
+		stampAngle     		2.1623
+		subviewer      		2
+	}
+
+	transition {
+		id             		47
+		labelString    		"[clutch==0]"
+		labelPosition  		[1319.768 118.663 60.991 15.215]
+		fontSize       		12
+		src {
+			id          		33
+			intersection		[0 0.9487 -0.3162 -1 1308.1908 135.5853 0 0]
+		}
+		dst {
+			id          		30
+			intersection		[3 0 1 0.8573 1366.6794 94.5208 0 0]
+		}
+		midPoint       		[1347.429 124.5818]
+		chart          		2
+		linkNode       		[28 74 46]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1308.191 1369.079 94.521 135.585]
+		stampAngle     		-0.3911
+		subviewer      		2
+	}
+
+	transition {
+		id             		48
+		labelString    		"[gear==2&&clutch==0]"
+		labelPosition  		[1177.961 254.815 122.966 15.215]
+		fontSize       		12
+		src {
+			id          		10
+			intersection		[2 1 0 0.7458 1169.8819 258.3804 0 0]
+		}
+		dst {
+			id          		35
+			intersection		[0 -0.7682 -0.6402 -1 1241.5796 273.2323 0 0]
+		}
+		midPoint       		[1206.209 257.4601]
+		chart          		2
+		linkNode       		[9 60 59]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1169.882 1241.58 257.111 273.232]
+		stampAngle     		-0.5521
+		subviewer      		2
+	}
+
+	transition {
+		id             		49
+		labelString    		"[brake!=0&&accelerator!=0]"
+		labelPosition  		[1174.226 409.095 147.559 15.215]
+		fontSize       		12
+		src {
+			id          		11
+			intersection		[2 1 0 0.3335 1164.4586 423.0772 0 0]
+		}
+		dst {
+			id          		26
+			intersection		[4 -1 0 0.6396 1321.5036 423.4744 0 0]
+		}
+		midPoint       		[1241.7574 423.237]
+		chart          		2
+		linkNode       		[25 0 62]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1164.459 1321.504 421.074 425.874]
+		subviewer      		2
+	}
+
+	transition {
+		id             		50
+		labelString    		"{acceleration=0;}"
+		labelPosition  		[356.543 26.09 90.503 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0 389.8886 39.9818 0 0]
+		}
+		dst {
+			id          		15
+			intersection		[4 -1 0 0.4178 408.479 76.8402 0 0]
+		}
+		midPoint       		[392.3732 64.0103]
+		chart          		2
+		linkNode       		[14 0 51]
+		isGrouped      		1
+		dataLimits     		[389.889 408.479 39.982 79.24]
+		subviewer      		2
+	}
+
+	transition {
+		id             		51
+		labelString    		"[t>tmp]\n"
+						"{acceleration=ml.calculate_acceleration(clutch,current_spe"
+						"ed, accelerator, gear,brake);}"
+		labelPosition  		[475.323 13.558 468.747 28.466]
+		fontSize       		12
+		src {
+			id          		15
+			intersection		[2 1 0 0.394 483.479 67.4302 0 0]
+		}
+		dst {
+			id          		16
+			intersection		[4 -1 0 0.5059 896.028 66.678 0 0]
+		}
+		midPoint       		[690.0909 65.3482]
+		chart          		2
+		linkNode       		[14 50 52]
+		isGrouped      		1
+		dataLimits     		[483.479 896.028 64.278 69.078]
+		subviewer      		2
+	}
+
+	transition {
+		id             		52
+		labelString    		"[t>tmp]"
+		labelPosition  		[561.507 142.791 39.841 15.215]
+		fontSize       		12
+		src {
+			id          		16
+			intersection		[3 0 1 0.7793 917.7583 87.7942 0 0]
+		}
+		dst {
+			id          		15
+			intersection		[3 0 1 0.5175 444.6665 97.7302 0 0]
+		}
+		midPoint       		[660.0029 133.7662]
+		chart          		2
+		linkNode       		[14 51 0]
+		isGrouped      		1
+		dataLimits     		[442.267 917.758 87.794 145.657]
+		subviewer      		2
+	}
+
+	transition {
+		id             		53
+		labelPosition  		[67.182 177.748 6.886 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0 78.1564 174.9072 0 0]
+		}
+		dst {
+			id          		18
+			intersection		[1 0 -1 0.6292 50.1593 196.1073 0 0]
+		}
+		midPoint       		[59.9025 179.8951]
+		chart          		2
+		linkNode       		[17 0 54]
+		isGrouped      		1
+		dataLimits     		[47.759 78.156 174.907 196.107]
+		subviewer      		2
+	}
+
+	transition {
+		id             		54
+		labelString    		"shift_up"
+		labelPosition  		[79.066 187.397 44.76 15.215]
+		fontSize       		12
+		src {
+			id          		18
+			intersection		[2 1 0 0.3662 75.2658 207.7074 0 0]
+		}
+		dst {
+			id          		19
+			intersection		[4 -1 0 0.6491 118.8718 206.9068 0 0]
+		}
+		midPoint       		[93.7562 207.2811]
+		chart          		2
+		linkNode       		[17 53 56]
+		isGrouped      		1
+		dataLimits     		[75.266 118.872 204.507 209.307]
+		subviewer      		2
+	}
+
+	transition {
+		id             		55
+		labelString    		"shift_down"
+		labelPosition  		[66.939 256.902 60.007 15.215]
+		fontSize       		12
+		src {
+			id          		19
+			intersection		[3 0 1 0.6679 141.358 227.4683 0 0]
+		}
+		dst {
+			id          		18
+			intersection		[3 0 1 0.489 42.1561 227.7843 0 0]
+		}
+		midPoint       		[88.5237 256.6502]
+		chart          		2
+		linkNode       		[17 56 57]
+		isGrouped      		1
+		dataLimits     		[39.756 141.358 227.468 256.69]
+		subviewer      		2
+	}
+
+	transition {
+		id             		56
+		labelString    		"shift_up"
+		labelPosition  		[198.956 198.107 44.76 15.215]
+		fontSize       		12
+		src {
+			id          		19
+			intersection		[2 1 0 0.4014 186.5808 208.5065 0 0]
+		}
+		dst {
+			id          		13
+			intersection		[4 -1 0 0.5887 253.4268 211.3891 0 0]
+		}
+		midPoint       		[216.1788 209.8725]
+		chart          		2
+		linkNode       		[17 54 55]
+		isGrouped      		1
+		dataLimits     		[186.581 253.427 208.506 213.789]
+		subviewer      		2
+	}
+
+	transition {
+		id             		57
+		labelString    		"shift_down"
+		labelPosition  		[206.785 260.163 60.007 15.215]
+		fontSize       		12
+		src {
+			id          		13
+			intersection		[3 0 1 0.5048 286.9563 230.0373 0 0]
+		}
+		dst {
+			id          		19
+			intersection		[3 0 1 0.1699 175.0771 227.4683 0 0]
+		}
+		midPoint       		[227.3718 260.8535]
+		chart          		2
+		linkNode       		[17 55 0]
+		isGrouped      		1
+		dataLimits     		[172.677 286.956 227.468 260.83]
+		subviewer      		2
+	}
+
+	transition {
+		id             		58
+		labelString    		"[current_speed<GEAR1MIN]"
+		labelPosition  		[1295.166 222.583 156.905 15.215]
+		fontSize       		12
+		src {
+			id          		34
+			intersection		[0 0.9762 0.2169 -1 1283.1724 237.3528 0 0]
+		}
+		dst {
+			id          		12
+			intersection		[4 -1 0 0.7568 1431.0159 246.6752 0 0]
+		}
+		midPoint       		[1356.1691 246.1169]
+		chart          		2
+		linkNode       		[9 40 65]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1283.172 1431.016 237.353 249.075]
+		stampAngle     		-0.2049
+		subviewer      		2
+	}
+
+	transition {
+		id             		59
+		labelString    		"[current_speed<GEAR2MIN]"
+		labelPosition  		[1290.721 274.449 156.905 15.215]
+		fontSize       		12
+		src {
+			id          		35
+			intersection		[0 0.9615 0.2747 -1 1253.6879 279.6366 0 0]
+		}
+		dst {
+			id          		12
+			intersection		[4 -1 0 0.3341 1431.0159 261.8134 0 0]
+		}
+		midPoint       		[1341.7208 276.1222]
+		chart          		2
+		linkNode       		[9 48 42]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1253.688 1431.016 259.413 283.818]
+		stampAngle     		-0.2997
+		subviewer      		2
+	}
+
+	transition {
+		id             		60
+		labelString    		"{error[2]=0;}"
+		labelPosition  		[1059.092 221.523 64.926 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0.6463 1074.3182 244.4367 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[4 -1 0 0.4153 1095.6179 253.1428 0 0]
+		}
+		midPoint       		[1080.9476 250.1124]
+		chart          		2
+		linkNode       		[9 65 48]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1074.318 1095.618 244.437 255.543]
+		subviewer      		2
+	}
+
+	transition {
+		id             		61
+		labelString    		"adjust_brake"
+		labelPosition  		[447.036 216.59 70.828 15.215]
+		fontSize       		12
+		src {
+			id          		22
+			intersection		[2 1 0 0.34 442.7391 232.3016 0 0]
+		}
+		dst {
+			id          		21
+			intersection		[4 -1 0 0.5944 534.4601 230.3851 0 0]
+		}
+		midPoint       		[487.0585 231.3716]
+		chart          		2
+		linkNode       		[20 64 67]
+		isGrouped      		1
+		dataLimits     		[442.739 534.46 227.985 232.785]
+		subviewer      		2
+	}
+
+	transition {
+		id             		62
+		labelString    		"{error[3]=0;}"
+		labelPosition  		[1053.669 399.626 64.926 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0.6463 1068.8944 422.5374 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[4 -1 0 0.4153 1090.1946 431.2444 0 0]
+		}
+		midPoint       		[1075.5238 428.2131]
+		chart          		2
+		linkNode       		[25 49 0]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1068.894 1090.195 422.537 433.644]
+		subviewer      		2
+	}
+
+	transition {
+		id             		63
+		labelString    		"[t>tmp]"
+		labelPosition  		[550.443 343.458 39.841 15.215]
+		fontSize       		12
+		src {
+			id          		8
+			intersection		[2 1 0 0.6054 536.1736 356.8919 0 -8.6376]
+		}
+		dst {
+			id          		24
+			intersection		[4 -1 0 0.5254 578.232 356.8919 0 8.6376]
+		}
+		midPoint       		[553.8564 356.8919]
+		chart          		2
+		linkNode       		[6 39 68]
+		isGrouped      		1
+		dataLimits     		[536.174 578.232 354.492 359.292]
+		subviewer      		2
+		drawStyle      		SMART
+	}
+
+	transition {
+		id             		64
+		labelString    		"[t>tmp]"
+		labelPosition  		[847.264 216.68 39.841 15.215]
+		fontSize       		12
+		src {
+			id          		21
+			intersection		[2 1 0 0.3918 837.6561 229.6293 0 1.6801]
+		}
+		dst {
+			id          		23
+			intersection		[4 -1 0 0.5679 899.0831 229.6264 0 -1.6801]
+		}
+		midPoint       		[865.4442 229.6285]
+		chart          		2
+		linkNode       		[20 0 61]
+		isGrouped      		1
+		dataLimits     		[837.656 899.083 227.226 232.026]
+		subviewer      		2
+		drawStyle      		SMART
+	}
+
+	transition {
+		id             		65
+		labelPosition  		[1191.156 237.473 6.886 15.215]
+		fontSize       		12
+		src {
+			id          		34
+			intersection		[0 0.2169 0.9762 -1 1277.8573 242.6679 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[2 1 0 0.3183 1169.8819 244.4811 0 0]
+		}
+		midPoint       		[1246.5997 250.2204]
+		chart          		2
+		linkNode       		[9 58 60]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1169.882 1277.857 242.081 251.381]
+		stampAngle     		1.7894
+		subviewer      		2
+	}
+
+	transition {
+		id             		66
+		labelPosition  		[1181.276 300.69 6.886 15.215]
+		fontSize       		12
+		src {
+			id          		35
+			intersection		[0 -0.2941 0.9558 -1 1244.8986 284.404 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[3 0 1 0.2638 1150.2908 266.6459 0 0]
+		}
+		midPoint       		[1191.1331 302.7184]
+		chart          		2
+		linkNode       		[9 42 44]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1147.891 1244.899 266.646 303.761]
+		stampAngle     		1.4149
+		subviewer      		2
+	}
+
+	transition {
+		id             		67
+		labelString    		"[t>tmp]"
+		labelPosition  		[635.432 278.841 39.841 15.215]
+		fontSize       		12
+		src {
+			id          		23
+			intersection		[4 -1 0 0.2181 899.0831 250.2573 0 -9.9581]
+		}
+		dst {
+			id          		22
+			intersection		[2 1 0 0.6992 442.7391 250.2616 0 9.9581]
+		}
+		midPoint       		[687.3631 294.2596]
+		chart          		2
+		linkNode       		[20 61 69]
+		isGrouped      		1
+		dataLimits     		[442.739 899.083 247.862 294.346]
+		subviewer      		2
+		drawStyle      		SMART
+		slide {
+			midPointSticky		1
+		}
+	}
+
+	transition {
+		id             		68
+		labelString    		"[t>tmp]"
+		labelPosition  		[254.212 409.125 39.841 15.215]
+		fontSize       		12
+		src {
+			id          		24
+			intersection		[4 -1 0 0.1848 578.2322 377.4159 0 -9.9359]
+		}
+		dst {
+			id          		7
+			intersection		[2 1 0 0.7082 94.3513 378.25 0 10.4109]
+		}
+		midPoint       		[342.5677 426.2731]
+		chart          		2
+		linkNode       		[6 63 43]
+		isGrouped      		1
+		dataLimits     		[94.351 578.232 375.85 426.13]
+		subviewer      		2
+		drawStyle      		SMART
+		slide {
+			sticky        		BOTH_STICK
+			midPointSticky		1
+		}
+	}
+
+	transition {
+		id             		69
+		labelString    		"/brake=0;"
+		labelPosition  		[369.509 273.846 51.154 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 -1 0 0 378.5725 291.9681 0 0]
+		}
+		dst {
+			id          		22
+			intersection		[3 0 1 0.8556 378.5691 265.3016 0 0]
+		}
+		midPoint       		[375.3901 284.7881]
+		chart          		2
+		linkNode       		[20 67 0]
+		isGrouped      		1
+		dataLimits     		[375.373 380.969 265.302 291.968]
+		subviewer      		2
+	}
+
+	transition {
+		id             		70
+		labelString    		"{error[1]=0;}"
+		labelPosition  		[1056.594 64.744 64.926 15.215]
+		fontSize       		12
+		src {
+			intersection		[0 0 0 0.6463 1068.3611 59.0187 0 0]
+		}
+		dst {
+			id          		29
+			intersection		[4 -1 0 0.4153 1120.6487 81.0759 0 0]
+		}
+		midPoint       		[1090.7994 73.3991]
+		chart          		2
+		linkNode       		[28 71 73]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1068.361 1120.649 59.019 83.476]
+		subviewer      		2
+	}
+
+	transition {
+		id             		71
+		labelString    		"shift_up"
+		labelPosition  		[1207.644 29.564 44.76 15.215]
+		fontSize       		12
+		src {
+			id          		29
+			intersection		[1 0 -1 0.7086 1195.4648 58.0218 0 0]
+		}
+		dst {
+			id          		32
+			intersection		[0 -0.7071 -0.7071 -1 1282.945 72.9762 0 0]
+		}
+		midPoint       		[1230.87 44.2112]
+		chart          		2
+		linkNode       		[28 0 70]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1195.465 1282.945 44.017 72.976]
+		stampAngle     		-0.7854
+		subviewer      		2
+	}
+
+	transition {
+		id             		72
+		labelString    		"[clutch==1]"
+		labelPosition  		[1238.926 58.137 60.991 15.215]
+		fontSize       		12
+		src {
+			id          		32
+			intersection		[0 0.2169 0.9762 -1 1289.413 84.7593 0 0]
+		}
+		dst {
+			id          		29
+			intersection		[2 1 0 0.3183 1226.2317 70.572 0 0]
+		}
+		midPoint       		[1270.1305 84.7477]
+		chart          		2
+		linkNode       		[28 73 74]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1226.232 1289.413 68.172 88.391]
+		stampAngle     		1.7894
+		subviewer      		2
+	}
+
+	transition {
+		id             		73
+		labelString    		"[clutch==0]"
+		labelPosition  		[1283.664 48.636 60.991 15.215]
+		fontSize       		12
+		src {
+			id          		32
+			intersection		[0 0.9762 0.2169 -1 1294.7281 79.4442 0 0]
+		}
+		dst {
+			id          		30
+			intersection		[4 -1 0 0.6992 1351.6127 66.952 0 0]
+		}
+		midPoint       		[1319.1381 74.4842]
+		chart          		2
+		linkNode       		[28 70 72]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1294.728 1351.613 64.552 79.947]
+		stampAngle     		-0.2186
+		subviewer      		2
+	}
+
+	transition {
+		id             		74
+		labelString    		"shift_down"
+		labelPosition  		[1247.686 100.955 60.007 15.215]
+		fontSize       		12
+		src {
+			id          		29
+			intersection		[2 1 0 0.4782 1226.2317 76.8767 0 0]
+		}
+		dst {
+			id          		33
+			intersection		[0 -0.9701 -0.2425 -1 1294.7592 136.1012 0 0]
+		}
+		midPoint       		[1257.9639 104.5249]
+		chart          		2
+		linkNode       		[28 72 47]
+		visible        		0
+		isGrouped      		1
+		dataLimits     		[1226.232 1294.759 76.877 136.489]
+		stampAngle     		0.2468
+		subviewer      		2
+	}
+
+	data {
+		id               		75
+		name             		"ACCE_DELAY"
+		linkNode         		[6 0 76]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"1"
+		}
+	}
+
+	data {
+		id               		76
+		name             		"tmp"
+		linkNode         		[6 75 0]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		77
+		name             		"tmp"
+		linkNode         		[14 0 78]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		78
+		name             		"coef"
+		linkNode         		[14 77 79]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		79
+		name             		"data1"
+		linkNode         		[14 78 0]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		80
+		name             		"BRAKE_DELAY"
+		linkNode         		[20 0 81]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"1"
+		}
+	}
+
+	data {
+		id               		81
+		name             		"tmp"
+		linkNode         		[20 80 0]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	event {
+		id         		82
+		name       		"press_clutch"
+		linkNode   		[2 0 83]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		83
+		name       		"release_clutch"
+		linkNode   		[2 82 84]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		84
+		name       		"shift_down"
+		linkNode   		[2 83 85]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		85
+		name       		"shift_up"
+		linkNode   		[2 84 86]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		86
+		name       		"adjust_accelerator"
+		linkNode   		[2 85 87]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		87
+		name       		"adjust_brake"
+		linkNode   		[2 86 0]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	data {
+		id               		88
+		name             		"cruise_speed"
+		linkNode         		[2 0 89]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		89
+		name             		"current_speed"
+		linkNode         		[2 88 90]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		90
+		name             		"acceleration"
+		linkNode         		[2 89 91]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		"-100"
+				maximum		"100"
+			}
+		}
+	}
+
+	data {
+		id               		91
+		name             		"gear"
+		linkNode         		[2 90 92]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"1"
+		}
+	}
+
+	data {
+		id               		92
+		name             		"clutch"
+		linkNode         		[2 91 93]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		93
+		name             		"brake"
+		linkNode         		[2 92 94]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		94
+		name             		"GEAR1MAX"
+		linkNode         		[2 93 95]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"30"
+		}
+	}
+
+	data {
+		id               		95
+		name             		"GEAR2MAX"
+		linkNode         		[2 94 96]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"50"
+		}
+	}
+
+	data {
+		id               		96
+		name             		"GEAR3MAX"
+		linkNode         		[2 95 97]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"70"
+		}
+	}
+
+	data {
+		id               		97
+		name             		"GEAR1MIN"
+		linkNode         		[2 96 98]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"-10"
+		}
+	}
+
+	data {
+		id               		98
+		name             		"GEAR2MIN"
+		linkNode         		[2 97 99]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"10"
+		}
+	}
+
+	data {
+		id               		99
+		name             		"GEAR3MIN"
+		linkNode         		[2 98 100]
+		scope            		CONSTANT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			initialValue		"30"
+		}
+	}
+
+	data {
+		id               		100
+		name             		"accelerator"
+		linkNode         		[2 99 101]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		101
+		name             		"error"
+		linkNode         		[2 100 102]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"3"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	data {
+		id               		102
+		name             		"toAcceLevel"
+		linkNode         		[2 101 103]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		"0"
+				maximum		"5"
+			}
+		}
+	}
+
+	data {
+		id               		103
+		name             		"toBrakeLevel"
+		linkNode         		[2 102 0]
+		scope            		LOCAL_DATA
+		machine          		1
+		dataType         		""
+		props {
+			range {
+				minimum		"0"
+				maximum		"5"
+			}
+		}
+	}
+
+	instance {
+		id     		104
+		name   		"Chart"
+		machine		1
+		chart  		2
+	}
+
+	target {
+		id               		105
+		name             		"sfun"
+		description      		"Default Simulink S-Function Target."
+		codeFlags        		" debug=1 telemetry=0 preservenames=0 preservenameswithparent"
+						"=0 exportcharts=0 project=0 multiinstanced=0 statebitsets=0 "
+						"databitsets=0 comments=1 echo=1 initializer=1 ioformat=1"
+		machine          		1
+		linkNode         		[1 0 0]
+	}
+}
